@@ -1,0 +1,129 @@
+[
+  {
+    "id": "1",
+    "fullName": "Dr. Madina Karimova",
+    "specialty": "Kardiolog",
+    "experienceYears": 12,
+    "price": 180000,
+    "imageUrl": "https://randomuser.me/api/portraits/women/44.jpg",
+    "education": "Toshkent tibbiyot akademiyasi, kardiologiya",
+    "about": "Yurak-qon tomir kasalliklarini tashxislash va davolash bo‘yicha mutaxassis.",
+    "workDays": [
+      1,
+      2,
+      3,
+      5
+    ],
+    "startTime": "09:00",
+    "endTime": "15:00",
+    "isActive": true,
+    "featured": true
+  },
+  {
+    "id": "2",
+    "fullName": "Dr. Azizbek Rahimov",
+    "specialty": "Nevrolog",
+    "experienceYears": 9,
+    "price": 160000,
+    "imageUrl": "https://randomuser.me/api/portraits/men/32.jpg",
+    "education": "Toshkent pediatriya tibbiyot instituti, nevrologiya",
+    "about": "Asab tizimi kasalliklari, bosh og‘rig‘i va uyqu buzilishlarini davolash bilan shug‘ullanadi.",
+    "workDays": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "startTime": "10:00",
+    "endTime": "18:00",
+    "isActive": true,
+    "featured": true
+  },
+  {
+    "id": "3",
+    "fullName": "Dr. Nilufar Usmonova",
+    "specialty": "Pediatr",
+    "experienceYears": 15,
+    "price": 140000,
+    "imageUrl": "https://randomuser.me/api/portraits/women/68.jpg",
+    "education": "Samarqand davlat tibbiyot universiteti, pediatriya",
+    "about": "Bolalar salomatligi va profilaktikasi yo‘nalishida katta tajribaga ega pediatr.",
+    "workDays": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "startTime": "09:00",
+    "endTime": "16:00",
+    "isActive": true,
+    "featured": true
+  },
+  {
+    "id": "4",
+    "fullName": "Dr. Jamshid Tursunov",
+    "specialty": "Dermatolog",
+    "experienceYears": 7,
+    "price": 150000,
+    "imageUrl": "https://randomuser.me/api/portraits/men/75.jpg",
+    "education": "Toshkent tibbiyot akademiyasi, dermatovenerologiya",
+    "about": "Teri, soch va tirnoq kasalliklari diagnostikasi va davolashiga ixtisoslashgan.",
+    "workDays": [
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "startTime": "09:00",
+    "endTime": "17:00",
+    "isActive": true,
+    "featured": false
+  },
+  {
+    "id": "5",
+    "fullName": "Dr. Feruza Abdullayeva",
+    "specialty": "Ginekolog",
+    "experienceYears": 11,
+    "price": 190000,
+    "imageUrl": "https://randomuser.me/api/portraits/women/26.jpg",
+    "education": "Toshkent tibbiyot akademiyasi, akusherlik va ginekologiya",
+    "about": "Ayollar salomatligi, profilaktik ko‘rik va maslahatlar bo‘yicha mutaxassis.",
+    "workDays": [
+      1,
+      2,
+      4,
+      5,
+      6
+    ],
+    "startTime": "10:00",
+    "endTime": "18:00",
+    "isActive": true,
+    "featured": false
+  },
+  {
+    "id": "6",
+    "fullName": "Dr. Sardor Ismoilov",
+    "specialty": "Terapevt",
+    "experienceYears": 8,
+    "price": 120000,
+    "imageUrl": "https://randomuser.me/api/portraits/men/36.jpg",
+    "education": "Buxoro davlat tibbiyot instituti, terapiya",
+    "about": "Umumiy salomatlik, dastlabki tashxis va davolash rejasini tuzishda yordam beradi.",
+    "workDays": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "startTime": "08:00",
+    "endTime": "16:00",
+    "isActive": true,
+    "featured": false
+  }
+]

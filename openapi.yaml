@@ -1,0 +1,86 @@
+openapi: 3.0.3
+info:
+  title: MED API
+  version: 0.1.0
+  description: Day 1 public API. Protected modules will be added in later stages.
+servers:
+  - url: http://localhost:4000
+paths:
+  /health:
+    get:
+      summary: Check API and database connectivity
+      responses:
+        '200':
+          description: Database is available
+  /api/doctors:
+    get:
+      summary: List active doctors
+      parameters:
+        - in: query
+          name: search
+          schema: { type: string, maxLength: 100 }
+        - in: query
+          name: specialty
+          schema: { type: string, maxLength: 100 }
+        - in: query
+          name: city
+          schema: { type: string, maxLength: 100 }
+        - in: query
+          name: minPrice
+          schema: { type: integer, minimum: 0 }
+        - in: query
+          name: maxPrice
+          schema: { type: integer, minimum: 0 }
+        - in: query
+          name: page
+          schema: { type: integer, minimum: 1, default: 1 }
+        - in: query
+          name: limit
+          schema: { type: integer, minimum: 1, maximum: 100, default: 20 }
+      responses:
+        '200':
+          description: Doctor array (frontend-compatible)
+          content:
+            application/json:
+              schema:
+                type: array
+                items: { $ref: '#/components/schemas/Doctor' }
+        '400':
+          description: Invalid query
+  /api/doctors/{id}:
+    get:
+      summary: Get an active doctor
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema: { type: string }
+      responses:
+        '200':
+          description: Doctor
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/Doctor' }
+        '404':
+          description: Doctor not found
+components:
+  schemas:
+    Doctor:
+      type: object
+      required: [id, fullName, specialty, experienceYears, price, imageUrl, education, about, workDays, startTime, endTime, isActive, featured]
+      properties:
+        id: { type: string }
+        fullName: { type: string }
+        specialty: { type: string }
+        experienceYears: { type: integer }
+        price: { type: integer }
+        imageUrl: { type: string }
+        education: { type: string }
+        about: { type: string }
+        workDays:
+          type: array
+          items: { type: integer }
+        startTime: { type: string }
+        endTime: { type: string }
+        isActive: { type: boolean }
+        featured: { type: boolean }
